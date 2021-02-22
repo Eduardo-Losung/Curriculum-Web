@@ -1,0 +1,340 @@
+/* Desenvolvido por: // Developed by: Eduardo Lösung */
+
+/* Tipografias // Typography */
+
+body {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Estilo da página index.html // Index.html page style */
+
+::selection { background: #ddff00; color: #000; }
+::-moz-selection { background: #ddff00; color: #000; }
+
+a:link {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.text-gray {
+  color: gray;
+}
+
+a.link-gray {
+  text-decoration: underline;
+}
+
+a.link-call{
+  background-color: #ddff00;
+  color: black;
+}
+
+a.link-call:hover{
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+
+.markup {
+  background-color: #f0faae;
+  color: black;
+}
+
+.atual {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.top-menu {
+  background-color: white;
+  /*formatar menu*/
+}
+
+.logo {
+  font-size: 18px;
+}
+
+.logotype {
+  color: black;
+  font-style: 700;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.perfil {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  float: right;
+}
+
+.title {
+  color: gray;
+  margin-top: 50px;
+  margin-bottom: -15px;
+  font-style: 700;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.tool-grid, .label {
+  --gridColumnCount: 6;
+  --gridRowGap: 40px;
+  display: grid;
+  grid: auto/repeat(var(--gridColumnCount),1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: var(--gridRowGap);
+}
+
+.icons {
+  padding-left: 25%;
+}
+
+span.label {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/*.job-function {
+   Adicionar um marcador e depois retirar alinhamento a direita
+}*/
+
+.job-function,
+.date {
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: right;
+}
+
+.date {
+  color: gray;
+  font-size: 16px;
+}
+
+.company,
+.text-area {
+  padding-right: 25%;
+}
+
+.tittle-proj {
+  padding-right: 50%;
+}
+
+.dark-bg {
+  width: 100%;
+}
+
+.ctas {
+  text-align: center;
+  padding: 50px;
+}
+
+.head,
+.tool,
+.exps,
+.educ,
+.proj,
+.ctas,
+.foot {
+  padding-left: 26%;
+  padding-right: 24%;
+}
+
+/* Adaptações de leiaute */
+
+@media screen and (min-width: 1440px) {
+  .head,
+  .tool,
+  .exps,
+  .educ,
+  .proj,
+  .ctas,
+  .foot {
+    max-width: 896px;
+    padding-left: 33.3%;
+  }
+  
+}
+
+@media screen and (max-width: 840px) {
+  .head,
+  .tool,
+  .exps,
+  .educ,
+  .proj,
+  .ctas,
+  .foot {
+    max-width: 660px;
+    padding-left: 33.3%;
+  }
+
+  .tool-grid, .label {
+    --gridColumnCount: 3;
+    --gridRowGap: 40px;
+    display: grid;
+    grid: auto/repeat(var(--gridColumnCount),1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: var(--gridRowGap);
+  }
+  
+  .icons {
+    padding-left: 25%;
+  }
+
+  .column {
+    float: none;
+    width: 100%;
+  }
+
+  h1, .company {
+    font-size: x-large;
+  }
+
+  .text-area {
+    font-size: 18px;
+  }
+
+  .job-function,
+  .date {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .ctas {
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .head,
+  .tool,
+  .exps,
+  .educ,
+  .proj,
+  .ctas,
+  .foot {
+    min-width: 420px;
+  }
+
+  .tool-grid, .label {
+    --gridColumnCount: 3;
+    --gridRowGap: 30px;
+    display: grid;
+    grid: auto/repeat(var(--gridColumnCount),0.8fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: var(--gridRowGap);
+  }
+
+  .column {
+    float: none;
+    width: 100%;
+  }
+
+  h1, .company {
+    font-size: x-large;
+  }
+
+  .text-area {
+    font-size: 18px;
+  }
+
+  .job-function,
+  .date {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .job-function {
+    text-decoration: underline;
+  }
+
+  .ctas {
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .head,
+  .tool,
+  .exps,
+  .educ,
+  .proj,
+  .ctas,
+  .foot {
+    min-width: 280px;
+  }
+
+  .tool-grid, .label {
+    --gridColumnCount: 2;
+    --gridRowGap: 15px;
+    display: grid;
+    grid: auto/repeat(var(--gridColumnCount),0.5fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: var(--gridRowGap);
+  }
+
+  .column {
+    float: none;
+    width: 100%;
+  }
+
+  h1, .company {
+    font-size: x-large;
+  }
+
+  .text-area {
+    font-size: 18px;
+  }
+
+  .job-function,
+  .date {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .job-function {
+    text-decoration: underline;
+  }
+
+  .ctas {
+    text-align: left;
+  }
+
+}

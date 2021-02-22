@@ -1,0 +1,173 @@
+/* Desenvolvido por: // Developed by: Eduardo Lösung/
+
+/* Tipografias // Typography */
+
+body {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Estilo da página index.html // Index.html page style */
+
+::selection {
+  background: #ddff00;
+  color: #000;
+}
+::-moz-selection {
+  background: #ddff00;
+  color: #000;
+}
+
+a {
+  color: gray;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+a.link-call {
+  background-color: #ddff00;
+  color: black;
+}
+
+a.link-call:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+
+.markup {
+  background-color: #f0faae;
+  color: black;
+}
+
+.atual {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.top-menu {
+  background-color: white;
+  /*formatar menu*/
+}
+
+.logo {
+  font-size: 18px;
+}
+
+.logotype {
+  color: black;
+  font-style: 700;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.perfil {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  float: right;
+}
+
+.title {
+  color: gray;
+  margin-top: 50px;
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.date {
+  color: gray;
+}
+
+.job-function {
+  font-weight: 700;
+}
+
+.col {
+  margin-top: 30px;
+}
+
+.ctas {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Títulos */
+
+h1 {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Componente de ícone com texto abaixo */
+
+.icon-component {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.icon-component > .icon {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+}
+.icon-component > .label {
+  margin-top: 10px;
+}
+
+/* Componente de experiência profissional ou acadêmico */
+
+.exp-comp .text-area {
+  font-weight: normal;
+}
+
+.exp-comp.-feat .text-area {
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 60vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 40vw;
+  }
+}
