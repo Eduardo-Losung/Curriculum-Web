@@ -1,5 +1,3 @@
-/* Desenvolvido por: // Developed by: Eduardo Lösung/
-
 /* Tipografias // Typography */
 
 body {
@@ -10,13 +8,17 @@ body {
 /* Estilo da página index.html // Index.html page style */
 
 ::selection {
+  font-weight: 500;
   background: #ddff00;
   color: #000;
 }
 ::-moz-selection {
+  font-weight: 500;
   background: #ddff00;
   color: #000;
 }
+
+/* Estilo dos links // Style links */
 
 a {
   color: gray;
@@ -31,6 +33,12 @@ a:hover {
   color: black;
 }
 
+a.visited {
+  color: black;
+}
+
+/* Rodapé // Footer */
+
 a.link-call {
   background-color: #ddff00;
   color: black;
@@ -40,6 +48,15 @@ a.link-call:hover {
   background-color: white;
   color: black;
   text-decoration: underline;
+}
+
+a.link-gray {
+  text-decoration: underline;
+  color: gray;
+}
+
+a.no-underline {
+  text-decoration: none;
 }
 
 .markup {
@@ -72,11 +89,10 @@ a.link-call:hover {
 
 .logotype {
   color: black;
-  font-style: 700;
+  font-weight: 700;
   font-size: 24px;
   margin-top: 50px;
   margin-bottom: 50px;
-  font-weight: 700;
 }
 
 .text-gray {
@@ -118,7 +134,13 @@ a.link-call:hover {
   padding: 50px;
 }
 
-/* Títulos */
+h2.logo-foot {
+  object-position: center;
+  padding-left: 42%;
+  text-align: center;
+}
+
+/* Títulos // Tittles */
 
 h1 {
   font-size: xx-large;
@@ -129,6 +151,31 @@ h3 {
   margin-top: 40px;
   margin-bottom: 40px;
   font-weight: 700;
+}
+
+/* Animações // Animations */
+
+[data-anime] {
+  opacity: 0;
+}
+
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
+.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+.fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
 }
 
 /* Componente de ícone com texto abaixo */
